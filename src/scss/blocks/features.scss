@@ -1,23 +1,59 @@
+@use '../mixins/responsive.scss' as *;
 .features {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @include responsive(tablet){
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+  }
+  @include responsive(desktop){
+    width: 100%;
+    display: flex;
+    flex-direction: roe;
+    justify-content: space-between;
+    background-color: red;
+  }
+  &__organization{
+    @include responsive(desktop){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+  }
+  &__information{
+    @include responsive(tablet){
+      width: 573px;
+      text-align: left;
+    }
+    @include responsive(desktop){
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+  }
   &__number {
     width: 50px;
     height: 50px;
-    border-radius: 50rem;
-    border: 1px var(--color-primary) solid;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    border-radius: 50%;
+    border: 1px var(--color-primary) solid;
+    
   }
   &__title {
     font-family: var(--font-fraunces);
+    
+    
   }
   &__text {
     font-family: var(--font-manrope);
     color: var(--color-text);
+    
   }
+
 }

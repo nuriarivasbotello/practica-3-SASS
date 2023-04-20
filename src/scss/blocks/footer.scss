@@ -1,9 +1,12 @@
 /* ESTILOS DEL FOOTER */
+@use '../mixins/responsive.scss' as *;
 .footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: red;
-  gap: 100px;
+  gap: 50px;
+  @include responsive(tablet){
+    margin-bottom:60px;
+  }
 }

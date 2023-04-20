@@ -1,4 +1,5 @@
 @use '../mixins/pseudo.scss' as *;
+@use '../mixins/responsive.scss' as *;
 .header {
   display: flex;
   flex-direction: column;
@@ -23,6 +24,12 @@
     z-index: -1;
     border-radius: 50rem;
     background-color: var(--color-primary);
+  }
+  @include responsive(desktop){
+    &::before {
+      @include pseudo(1800px, 1000px);
+
+    }
   }
 }
 .header__menu {
