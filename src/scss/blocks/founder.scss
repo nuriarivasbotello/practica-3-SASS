@@ -1,0 +1,37 @@
+.founder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  &__photo {
+    width: 281px;
+    height: 281px;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+  }
+  &__biography {
+    width: 343px;
+    top: -50px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    gap: 20px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: var(--font-manrope);
+    background-color: var(--color-primary);
+  }
+  &__title {
+    font-size: 30px;
+    color: white;
+    font-family: var(--font-fraunces);
+  }
+  &__text {
+    color: white;
+  }
+}

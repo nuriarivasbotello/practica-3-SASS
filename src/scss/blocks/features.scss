@@ -1,0 +1,23 @@
+.features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__number {
+    width: 50px;
+    height: 50px;
+    border-radius: 50rem;
+    border: 1px var(--color-primary) solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  &__title {
+    font-family: var(--font-fraunces);
+  }
+  &__text {
+    font-family: var(--font-manrope);
+    color: var(--color-text);
+  }
+}
