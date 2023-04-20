@@ -1,1 +1,39 @@
 
+@use '../mixins/pseudo.scss' as *;
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    margin: 30px 40px;
+    gap:40px;
+}
+.header--top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.color{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    left:-300px;
+    bottom:60px;
+    z-index: -1;
+    /*overflow:*/
+    border-radius:45%;
+    background-color:var(--color-primary)
+}
+.header__menu{
+    font-family: var(--font-manrope);
+    color:white;
+    &::before { 
+        @include pseudo (1, 1) {
+         width: 125px;
+         height: 2px;
+         margin-top:25px;
+         background-color: var(--color-secondary);
+        }
+    }
+}
