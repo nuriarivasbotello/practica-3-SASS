@@ -3,6 +3,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  @include responsive(desktop){
+    position: relative;
+    top:250px;
+    margin:auto;
+  }
   &__photo {
     width: 281px;
     height: 281px;
@@ -40,6 +45,11 @@
      flex-direction: column;
      justify-content: space-between;
      align-items:flex-start;
+    }
+    @include responsive(desktop){
+      width: 730px;
+      left:230px;
+      top:-160px;
     }
   }
   &__title {

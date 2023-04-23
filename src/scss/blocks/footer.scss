@@ -9,4 +9,9 @@
   @include responsive(tablet){
     margin-bottom:60px;
   }
+  @include responsive(desktop){
+    position: relative;
+    top:200px;
+   margin-bottom: 30px;
+  }
 }
